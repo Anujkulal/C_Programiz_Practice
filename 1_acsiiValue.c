@@ -1,3 +1,4 @@
+// program to find ascii value of a character
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
