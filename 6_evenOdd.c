@@ -1,4 +1,4 @@
-//
+//to print even or odd number
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
