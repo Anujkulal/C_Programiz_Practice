@@ -13,14 +13,25 @@ int main() {
     // printf("The sum of natural numbers is %d\n",sum);
 
     // //while loop
-    int n, sum=0;
+    // int n, sum=0;
+    // printf("Enter the number of natural numbers: ");
+    // scanf("%d", &n);
+    // int i = 1;
+    // while(i<=n){
+    //     sum += i;
+    //     i++;
+    // }
+    // printf("The sum of natural numbers is %d\n",sum);
+
+    // //do-while loop
+    int n, i, sum = 0;
     printf("Enter the number of natural numbers: ");
     scanf("%d", &n);
-    int i = 1;
-    while(i<=n){
+    i = 1;
+    do{
         sum += i;
         i++;
-    }
+    }while(i <= n);
     printf("The sum of natural numbers is %d\n",sum);
     return 0;
 }
