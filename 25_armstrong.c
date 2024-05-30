@@ -30,6 +30,8 @@ int main() {
     scanf("%d", &num);
     originalNum = num;
     int length = numLength(num);
+    int result = armstrong(originalNum, length);
+    if(result == originalNum) printf("%d is a armstrong number\n",originalNum);
+    else printf("%d is not a armstrong number\n", originalNum);
     return 0;
-    printf("reslut = %d\n", armstrong(originalNum, length));
 }
