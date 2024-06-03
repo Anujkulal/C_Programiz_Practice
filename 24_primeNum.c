@@ -4,18 +4,17 @@
 #include<math.h>
 #include<string.h>     
 int main() {
-    int num, flag = 0;
+    int num;
+    int flag = 1;//is prime
     printf("Enter the number: ");
     scanf("%d", &num);
-    for(int i=2; i<=num/2; i++){
+    if(num == 0 || num ==1) flag = 0;
+    for(int i=2; i<num; i++){  // for(int i=2; i<=num/2; i++)
         if(num % i == 0){
-            flag = 1;
-            break;
+            flag = 0;//is not prime
+            break; //if num is divisible by any number then break out from a loop
         }
     }
-        if(num <=1){
-            flag = 0;
-        }
     if (flag == 1){
         printf("%d is a prime number\n",num);
     }
