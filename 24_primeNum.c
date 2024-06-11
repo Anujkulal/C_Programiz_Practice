@@ -12,7 +12,7 @@ int main() {
     for(int i=2; i<num; i++){  // for(int i=2; i<=num/2; i++)
         if(num % i == 0){
             flag = 0;//is not prime
-            break; //if num is divisible by any number then break out from a loop 'Cascadia Code', 'Droid Sans Mono', 'monospace'
+            break; //if num is divisible by any number then break out from a loop
         }
     }
     if (flag == 1){
