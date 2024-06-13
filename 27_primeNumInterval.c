@@ -15,14 +15,14 @@
 //     int n1, n2; //is prime
 //     printf("Enter the interval: ");
 //     scanf("%d %d", &n1, &n2);
-    
+
 //     // swap the number if first number is greater
 //     if(n1 > n2){
 //     n1 = n1 + n2;
 //     n2 = n1 - n2;
 //     n1 = n1 - n2;
 //     }
-    
+
 //     if(n1 == 1 || n1 == 0){
 //         n1 = n1 + 1;
 //         printf("Prime number will be printed in the interval %d --> %d\n", n1, n2);
@@ -38,39 +38,49 @@
 
 // or
 
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
-#include<string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
 
-int isprime(int n){
-    int count=0;
-    for(int i=1; i<=n; i++){
-        if(n % i == 0){
+int isprime(int n)
+{
+    int count = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        if (n % i == 0)
+        {
             count++;
         }
     }
-    if(count==2) return 1;
-    else return 0;
+    if (count == 2)
+        return 1;
+    else
+        return 0;
 }
-int main() {
-    int n1, n2; //is prime
+int main()
+{
+    int n1, n2; // is prime
     printf("Enter the interval: ");
     scanf("%d %d", &n1, &n2);
-    
+
     // swap the number if first number is greater
-    if(n1 > n2){
-    n1 = n1 + n2;
-    n2 = n1 - n2;
-    n1 = n1 - n2;
+    if (n1 > n2)
+    {
+        n1 = n1 + n2;
+        n2 = n1 - n2;
+        n1 = n1 - n2;
     }
-    
-    if(n1 == 1 || n1 == 0){
+
+    if (n1 == 1 || n1 == 0)
+    {
         n1 = n1 + 1;
         printf("Prime number will be printed in the interval %d --> %d\n", n1, n2);
     }
-    for(int i=n1; i<=n2; i++){
-        if(isprime(i)) printf("%d ",i);
+    for (int i = n1; i <= n2; i++)
+    {
+        if (isprime(i))
+            printf("%d ", i);
     }
     printf("\n");
     return 0;
